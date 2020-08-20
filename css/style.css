@@ -1,0 +1,514 @@
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url('../fonts/Gilroy-Medium.woff') format("woff"),
+  url('../fonts/Gilroy-Medium.woff2') format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy Bold";
+  src: url('../fonts/Gilroy-ExtraBold.woff') format("woff"),
+  url('../fonts/Gilroy-ExtraBold.woff2') format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  font-family: "Gilroy Regular", sans-serif;
+  font-weight: normal;
+}
+
+.header {
+  position: relative;
+  padding: 45px 0px 32px 17px;
+}
+
+.headerBgimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100%;
+  border-radius: 0px 0px 237px 0px;
+  background-color: #ED7532;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.logo {
+  position: relative;
+  z-index: 1;
+  width: 102px;
+  height: 27px;
+}
+
+.main {
+  padding: 11px 14px 0px 15px;
+  letter-spacing: 0.5px;
+}
+
+.question {
+  margin: 0 0 38px 0;
+  font-size: 23px;
+  line-height: 28px;
+}
+
+.questionBold {
+  font-family: "Gilroy Bold", sans-serif;
+  font-weight: bold;
+}
+
+.brDesktop {
+  display: none;
+}
+
+.step {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.choice {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+.linkWrap {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-column-gap: 21px;
+  margin-bottom: 23px;
+}
+
+.link {
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: min-content min-content;
+  grid-column-gap: 16px;
+  height: 61px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.link:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.linkTelegram {
+  width: 160px;
+  background: #2F89CE;
+  box-shadow: 0px 15px 35px rgba(47, 137, 206, 0.25);
+}
+
+.linkViber {
+  width: 126px;
+  background: #7C509A;
+  box-shadow: 0px 15px 35px rgba(124, 80, 154, 0.25);
+}
+
+.linkTelegramIcon {
+  width: 26px;
+  height: 23px;
+}
+
+.linkTelegramText {
+  display: block;
+  padding-top: 5px;
+  width: 73px;
+  height: 16px;
+}
+
+.linkViberIcon {
+  width: 23px;
+  height: 25px;
+}
+
+.linkViberText {
+  width: 41px;
+  height: 13px;
+}
+
+.mainImgWrap {
+  position: relative;
+  height: 220px;
+}
+
+.mainBgimg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 157px;
+  height: 100%;
+  background-color: #ED7532;
+  opacity: 0.1;
+  border-radius: 100px 0px 0px 0px;
+}
+
+.mainImg {
+  position: absolute;
+  bottom: 3px;
+  left: -6px;
+  right: 0;
+  margin: auto;
+  height: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 335px) {
+  .linkWrap {
+    grid-column-gap: 10px;
+  }
+
+  .linkTelegram {
+    width: 150px;
+  }
+
+  .linkViber {
+    width: 116px;
+  }
+}
+
+@media (max-width: 374px) {
+  .header {
+    padding: 30px 0px 22px 17px;
+    background-size: contain;
+  }
+
+  .question {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .step {
+    margin-bottom: 20px;
+  }
+
+  .link {
+    height: 50px;
+  }
+
+  .mainImgWrap {
+    height: 200px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .mainImgWrap {
+    height: 300px;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .header,
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .question {
+    width: 80%;
+  }
+
+  .mainImgWrap {
+    height: 300px;
+    background-size: contain;
+  }
+
+  .mainImg {
+    left: unset;
+    right: 30px;
+    margin: unset;
+  }
+}
+
+@media (min-height: 750px) and (max-height: 820px) {
+  .mainImgWrap {
+    margin-top: 60px;
+    height: 300px;
+    background-size: contain;
+  }
+}
+
+@media (min-height: 950px) {
+  .main {
+    margin-top: 60px;
+  }
+
+  .mainImgWrap {
+    margin-top: 60px;
+    height: 400px;
+    background-size: contain;
+  }
+
+  .mainImg {
+    right: 50px;
+  }
+
+  .mainBgimg {
+    width: 350px;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo {
+    width: 161px;
+    height: 44px;
+  }
+
+  .question {
+    margin-bottom: 51px;
+    width: 731px;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 0px;
+  }
+
+  .brDesktop {
+    display: block;
+  }
+
+  .step {
+    margin-bottom: 36px;
+    font-size: 40px;
+    line-height: 65px;
+  }
+
+  .choice {
+    margin-bottom: 39px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .link {
+    height: 70px;
+    grid-column-gap: 20px;
+  }
+
+  .linkTelegram {
+    width: 194px;
+  }
+
+  .linkViber {
+    width: 153px;
+  }
+
+  .linkTelegramIcon {
+    width: 31px;
+    height: 27px;
+  }
+
+  .linkTelegramText {
+    width: 90px;
+    height: 22px;
+  }
+
+  .linkViberIcon {
+    width: 28px;
+    height: 31px;
+  }
+
+  .linkViberText {
+    width: 50px;
+    height: 18px;
+  }
+
+  .linkWrap {
+    grid-column-gap: 44px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1799px) {
+  .container {
+    position: relative;
+    height: 100vh;
+  }
+
+  .container::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 188px;
+    background-color: #ED7532;
+    opacity: 0.1;
+    z-index: -1;
+  }
+
+  .header,
+  .main {
+    width: 768px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .header {
+    padding: 87px 0px 53px 0px;
+    background-color: #fff;
+  }
+
+  .headerBgimg {
+    width: 260px;
+  }
+
+  .logo {
+    left: 15px;
+  }
+
+  .mainImgWrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+    pointer-events: none;
+  }
+
+  .mainBgimg {
+    border-radius: 200px 0 0 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mainImg {
+    right: 0px;
+    bottom: 0px;
+    left: unset;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .container::after {
+    height: 117px;
+  }
+
+  .header {
+    padding: 43px 0px 26px 0px;
+  }
+
+  .question {
+    margin-bottom: 31px;
+    width: 535px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .step {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .mainImgWrap {
+    width: 300px;
+    height: 300px;
+  }
+
+  .mainBgimg {
+    width: 150%;
+  }
+
+  .mainImg {
+    right: 80px;
+    bottom: 10px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mainBgimg {
+    width: 100%;
+  }
+
+  .mainImg {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .mainImgWrap {
+    width: 400px;
+    height: 400px;
+  }
+
+  .mainBgimg {
+    width: 100%;
+  }
+
+  .mainImg {
+    right: 50px;
+    bottom: 10px;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1799px) {
+  .mainImgWrap {
+    bottom: 150px;
+    width: 400px;
+    height: 500px;
+  }
+
+  .mainImg {
+    right: 70px;
+    bottom: 20px;
+    left: unset;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .header {
+    padding: 87px 0px 53px 386px;
+  }
+
+  .headerBgimg {
+    top: 0;
+    left: 0;
+    width: 693px;
+  }
+
+  .logo {
+    left: -2px;
+  }
+
+  .main {
+    margin-top: unset;
+    padding: 69px 14px 0px 386px;
+  }
+
+  .mainImgWrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .mainBgimg {
+    width: 611px;
+    height: 631px;
+    border-radius: 200px 0 0 0;
+  }
+
+  .mainImg {
+    right: 55px;
+    bottom: 48px;
+    left: unset;
+    height: auto;
+  }
+}
+
+@media (min-height: 1300px) {
+  .mainImgWrap {
+    width: 600px;
+    height: 600px;
+  }
+
+  .mainImg {
+    right: 90px;
+    bottom: 20px;
+  }
+}
