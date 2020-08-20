@@ -215,6 +215,10 @@
   }
 
   .mainImgWrap {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-top: 0;
     height: 300px;
     background-size: contain;
   }
@@ -366,7 +370,7 @@
     bottom: 0;
     right: 0;
     width: 400px;
-    height: 400px;
+    height:50%;
     pointer-events: none;
   }
 
@@ -407,7 +411,7 @@
 
   .mainImgWrap {
     width: 300px;
-    height: 300px;
+    height: 50%;
   }
 
   .mainBgimg {
@@ -415,7 +419,7 @@
   }
 
   .mainImg {
-    right: 80px;
+    right: 60px;
     bottom: 10px;
   }
 }
@@ -425,7 +429,7 @@
   }
 
   .mainImg {
-    right: 10px;
+    right: 30px;
     bottom: 10px;
   }
 }
@@ -433,7 +437,7 @@
 @media (min-width: 1200px) and (max-width: 1440px) {
   .mainImgWrap {
     width: 400px;
-    height: 400px;
+    height: 60%;
   }
 
   .mainBgimg {
@@ -448,9 +452,8 @@
 
 @media (min-width: 1441px) and (max-width: 1799px) {
   .mainImgWrap {
-    bottom: 150px;
     width: 400px;
-    height: 500px;
+    height: 50%;
   }
 
   .mainImg {
